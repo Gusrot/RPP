@@ -75,7 +75,8 @@ namespace TestEstante
 
             Estante.GuardarEstante(est1,"Estante 1");
             Estante.GuardarEstante(est2,"Estante 2");
-            Estante.SerializarEstante(est1, "Estante 1");
+            Estante.SerializarEstante(est1,est2, "Estante 1","Estante 2");
+            Estante.DeserializarEstante();
         }
        
         private static int OrdenarProductos(Producto p, Producto p1)
